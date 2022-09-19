@@ -1,6 +1,6 @@
 package com.h2;
 
-public class Utitlities {
+public class Utilities {
    public static long getLongValue(String in){
     long out = Long.MIN_VALUE;
     try{
@@ -16,7 +16,7 @@ public class Utitlities {
     try {
         out = Integer.parseInt(in);
     } catch(NumberFormatException e){
-        throw new IllegalArgumentException(in + "cannot be converted into a 'int' value. Exiting program.");
+        throw new IllegalArgumentException(in + " cannot be converted into a 'int' value. Exiting program.");
     }
     return out;
    }
@@ -25,7 +25,7 @@ public class Utitlities {
     try {
         out = Float.parseFloat(in);
     } catch(NumberFormatException e){
-        throw new IllegalArgumentException(in + "cannot be converted into a 'float' value. Exiting program.");
+        throw new IllegalArgumentException(in + " cannot be converted into a 'float' value. Exiting program.");
     }
     return out;
    }
